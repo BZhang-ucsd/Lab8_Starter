@@ -27,11 +27,11 @@ test('Invalid phone number should return false', () => {
   
 // isEmail
 test('Valid email should return true', () => {
-    expect(isEmail('test@example.com')).toBe(true);
+    expect(isEmail('test@gmail.com')).toBe(true);
 });
   
 test('Valid email should return true', () => {
-    expect(isEmail('user123@gmail.com')).toBe(true);
+    expect(isEmail('1234567@ucsd.com')).toBe(true);
 });
   
 test('Invalid email should return false', () => {
@@ -39,7 +39,7 @@ test('Invalid email should return false', () => {
 });
   
 test('Invalid email should return false', () => {
-    expect(isEmail('user123@gmail')).toBe(false);
+    expect(isEmail('1234567@ucsd')).toBe(false);
 });
   
 // isStrongPassword
@@ -61,11 +61,11 @@ test('Invalid strong password should return false', () => {
   
 // isDate
 test('Valid date should return true', () => {
-    expect(isDate('01/01/2022')).toBe(true);
+    expect(isDate('01/01/2000')).toBe(true);
 });
   
 test('Valid date should return true', () => {
-    expect(isDate('12/31/2023')).toBe(true);
+    expect(isDate('05/28/2023')).toBe(true);
 });
   
 test('Invalid date should return false', () => {
@@ -73,7 +73,7 @@ test('Invalid date should return false', () => {
 });
   
 test('Invalid date should return false', () => {
-    expect(isDate('31-12-2023')).toBe(false);
+    expect(isDate('28-05-2023')).toBe(false);
 });
   
 // isHexColor
@@ -86,7 +86,7 @@ test('Valid hex color should return true', () => {
 });
   
 test('Invalid hex color should return false', () => {
-    expect(isHexColor('#G12345')).toBe(false);
+    expect(isHexColor('#ZZ000')).toBe(false);
 });
   
 test('Invalid hex color should return false', () => {
