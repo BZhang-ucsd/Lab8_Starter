@@ -1,5 +1,5 @@
 # Lab 8 - Starter
-
+Botaoo Zhang
 # 1
 
 Automated tests should be integrated within a GitHub action that runs whenever code is pushed because it ensures continuous integration, providing early detection of issues for better debugging process. Additionally, integrating tests into the GitHub workflow promotes collaboration, enables code review of the project.
